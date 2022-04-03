@@ -11,15 +11,27 @@
 </head>
 
 <body>
-    <h1>Eat & Enjoy !!!</h1>
+    <h1 style="font-size:40px;
+       text-align:center;	
+        background-color:rgba(0,0,0,0.3);
+         border:4px solid black;
+         margin-left:500px;
+        margin-right:500px;
+       border-radius:5px;
+      color:#0ff0d2;
+     margin-bottom:10px;
+	 padding:5px;"
+
+  class="header1"><b>Eat&Enjoy</b></h1>
+
     <div class="login">
-        <h2>Pizza Liking Prediction</h2>
+        <h2><b>Pizza Liking Prediction</b></h2>
         <br>
         <form action="{{ url_for('pizza')}}" method="POST">
-            <h4>Enter your age</h4>
+            <h3><b>Enter your age</b></h3>
             <input type="text" name="age" placeholder="age" required="required"/>
             <br>
-            <h4>Enter your weight</h4>
+            <h3><b>Enter your weight</b></h3>
             <input type="text" name="weight" placeholder="weight" required="required"/>
             <br>
             <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
